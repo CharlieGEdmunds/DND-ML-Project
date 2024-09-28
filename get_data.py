@@ -409,12 +409,10 @@ def create_json_with_index(index):
     
     return dataframe_array
 
-beasts = create_json_with_index(1)
-
 race_types = ["aberrations", "beasts", "celestials", "constructs", "dragons", "elementals", "fey", "fiends", "giants", "humanoids", "monstrosoties", "oozes", "plants", "undead"]
 
-temp = create_json_with_index(8)
+temp = create_json_with_index(3)
 # Save to a file using json
-file_name = "giants" + "_array.json"
+file_name = "constructs" + "_array.json"
 with open(file_name, 'w') as f:
     json.dump(temp, f)
